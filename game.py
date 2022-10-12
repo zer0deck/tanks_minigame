@@ -75,8 +75,8 @@ if __name__ == "__main__":
             val.print_info()
         
         attack = input("\nВведите модель врага для атаки: ")
-        player.shot(enemy_dict[attack])
         print()
+        player.shot(enemy_dict[attack])
         for e in enemy_dict.values():
             destroyed = 0
             if e.is_alive:
